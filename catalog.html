@@ -11,7 +11,7 @@
   <header class="main-header">
     <div class="container">
       <div class="header-logo">
-        <img src="#" alt="Nerds">
+        <img src="img/logo.png" width="139" height="56" alt="Nerds">
       </div>
       <nav class="main-navigation">
         <ul>
@@ -41,59 +41,59 @@
         <h1>Добро пожаловать в магазин готовых макетов</h1> <!-- TODO: line-height and font-size 40 -->
       </div>
       <aside class="filters">
-        <div class="filter">
-          FORM!
-          input type
-          <h3 class="filter-title">Стоимость:</h3>
-          <div class="slider">
-            два дива!
+        <form>
+          <div class="filter">
+            <h3 class="filter-title">Стоимость:</h3>
+            <div class="slider">
+              <!-- TODO два дива или input type=range -->
+            </div>
+            <label>
+              От
+              <input type="text" name="from" placeholder="0">
+            </label>
+            <label>
+              До
+              <input type="text" name="to" placeholder="15000">
+            </label>
           </div>
-          <label>
-            От
-            <input type="text" name="from" placeholder="0">
-          </label>
-          <label>
-            До
-            <input type="text" name="to" placeholder="15000">
-          </label>
-        </div>
-        <div class="filter">
-          <h3 class="filter-title">Сетка:</h3>
-          <ul>
-            <li>
-              <a href="#"><img src="#">Адаптивная</a>
-            </li>
-            <li>
-              <a href="#"><img src="#">Фиксированная</a>
-            </li>
-            <li>
-              <a href="#"><img src="#">Резиновая</a>
-            </li>
-          </ul>
-        </div>
-        <div class="filter">
-          <h3 class="filter-title">Особенности:</h3>
-          <ul>
-            <li>
-              <a href="#"><img src="#">Слайдер</a>
-            </li>
-            <li>
-              <a href="#"><img src="#">Блок преимуществ</a>
-            </li>
-            <li>
-              <a href="#"><img src="#">Новости</a>
-            </li>
-            <li>
-              <a href="#"><img src="#">Галерея</a>
-            </li>
-            <li>
-              <a href="#"><img src="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <div class="show">
-          <a href="#">Показать</a>
-        </div>
+          <div class="filter">
+            <h3 class="filter-title">Сетка:</h3>
+            <ul>
+              <li>
+                <a href="#"><img src="#">Адаптивная</a>
+              </li>
+              <li>
+                <a href="#"><img src="#">Фиксированная</a>
+              </li>
+              <li>
+                <a href="#"><img src="#">Резиновая</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter">
+            <h3 class="filter-title">Особенности:</h3>
+            <ul>
+              <li>
+                <a href="#"><img src="#">Слайдер</a>
+              </li>
+              <li>
+                <a href="#"><img src="#">Блок преимуществ</a>
+              </li>
+              <li>
+                <a href="#"><img src="#">Новости</a>
+              </li>
+              <li>
+                <a href="#"><img src="#">Галерея</a>
+              </li>
+              <li>
+                <a href="#"><img src="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <div class="show">
+            <button type="submit">Показать</button>
+          </div>
+        </form>
       </aside>
       <div class="items">
         <div class="sort-by">
@@ -109,34 +109,81 @@
           </ul>
         </div>
         <article class="item">
-          <!-- TODO: в каждом артикле лежит помимо блока с картинкой еще и блок (серая шапочка с тремя белыми кружочками ) -->
+          <div class="item__browser">
+              <img src="img/browser.png" width="240" height="30" alt="browser">
+          </div>
           <div class="item__logo">
-            <img src="#" alt="Aviator">
+            <img src="img/catalog-pic1.jpg" width="240" alt="240" alt="Aviator">
+          </div>
+          <div class="item__content">
+            <h2><a href="#">Aviator</a></h2>
+            <p>Одностраничный макет с авторским дизайном</p>
+            <button type="submit">8000 Р.</button>
           </div>
         </article>
         <article class="item">
+          <div class="item__browser">
+              <img src="img/browser.png" width="240" height="30" alt="browser">
+          </div>
           <div class="item__logo">
-            <img src="#" alt="Sunset">
+            <img src="img/catalog-pic2.jpg" width="240" alt="240" alt="Sunset">
+          </div>
+          <div class="item__content">
+            <h2><a href="#">Sunset</a></h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <button type="submit">10000 Р.</button>
           </div>
         </article>
         <article class="item">
+          <div class="item__browser">
+              <img src="img/browser.png" width="240" height="30" alt="browser">
+          </div>
           <div class="item__logo">
-            <img src="#" alt="Forte">
+            <img src="img/catalog-pic3.jpg" width="240" alt="240" alt="Forte">
+          </div>
+          <div class="item__content">
+            <h2><a href="#">Forte</a></h2>
+            <p>Отличный макет для личного блога</p>
+            <button type="submit">5000 Р.</button>
           </div>
         </article>
         <article class="item">
+          <div class="item__browser">
+              <img src="img/browser.png" width="240" height="30" alt="browser">
+          </div>
           <div class="item__logo">
-            <img src="#" alt="Modern">
+            <img src="img/catalog-pic4.jpg" width="240" alt="240" alt="Modern">
+          </div>
+          <div class="item__content">
+            <h2><a href="#">Modern</a></h2>
+            <p>Сайт для ресторана быстрого питания</p>
+            <button type="submit">12000 Р.</button>
           </div>
         </article>
         <article class="item">
+          <div class="item__browser">
+              <img src="img/browser.png" width="240" height="30" alt="browser">
+          </div>
           <div class="item__logo">
-            <img src="#" alt="Avenue">
+            <img src="img/catalog-pic5.jpg" width="240" alt="240" alt="Avenue">
+          </div>
+          <div class="item__content">
+            <h2><a href="#">Avenue</a></h2>
+            <p>Макет для блога о путешествиях</p>
+            <button type="submit">8000 Р.</button>
           </div>
         </article>
         <article class="item">
+          <div class="item__browser">
+              <img src="img/browser.png" width="240" height="30" alt="browser">
+          </div>
           <div class="item__logo">
-            <img src="#" alt="Dovetail">
+            <img src="img/catalog-pic6.jpg" width="240" alt="240" alt="Dovetail">
+          </div>
+          <div class="item__content">
+            <h2><a href="#">Dovetail</a></h2>
+            <p>Интернет-магазин с галереей товаров</p>
+            <button type="submit">14000 Р.</button>
           </div>
         </article>
         <nav class="pagination">
@@ -149,7 +196,7 @@
         </nav>
       </div>
       <div class="map">
-        <img src="#" alt="map">
+        <img src="img/index-map.png" width="1199" height="416" alt="map">
         <div class="contacts">
           <h5>Nerds Design Studio</h5>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
